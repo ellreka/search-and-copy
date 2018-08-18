@@ -9,10 +9,6 @@
     "persistent": false
   },
 
-  // "icons":{
-  //   "128": "icon128.png"
-  // },
-
   "permissions": [
     "tabs",
     "contextMenus",
