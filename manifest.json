@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "search and copy",
+  "description": "Google検索とコピーを同時に行います",
+  "version": "0.1.0",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  // "icons":{
+  //   "128": "icon128.png"
+  // },
+
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "clipboardRead"
+  ]
+
+}
+
