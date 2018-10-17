@@ -1,9 +1,11 @@
-chrome.contextMenus.create({
-  id: "search_and_copy",
-  title: "Googleで検索とコピー",
-  contexts: ["selection"],
-  type: "normal",
-});
+chrome.runtime.onInstalled.addListener(function() {
+  chrome.contextMenus.create({
+    id: "search_and_copy",
+    title: "Search and Copy",
+    contexts: ["selection"],
+    type: "normal",
+  });
+})
 
 chrome.contextMenus.onClicked.addListener(function(info,tab){
   var selectText = info.selectionText
